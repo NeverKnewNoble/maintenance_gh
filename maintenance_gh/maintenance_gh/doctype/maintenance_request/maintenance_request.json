@@ -1,27 +1,77 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{####}",
  "creation": "2023-10-04 13:12:51.900083",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name_request"
+  "issue_raised_by",
+  "company_name",
+  "column_break_1",
+  "date_requested",
+  "section_break_1",
+  "sector",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "name_request",
+   "fieldname": "date_requested",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_name",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Table",
+   "label": "Sector",
+   "no_copy": 1,
+   "options": "Sector List",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Maintenance Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "issue_raised_by",
+   "fieldtype": "Table",
+   "label": "Issue Raised By",
+   "options": "User List",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-10-04 13:12:51.900083",
+ "modified": "2023-10-04 17:05:47.355579",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Request",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
