@@ -9,7 +9,6 @@
  "engine": "InnoDB",
  "field_order": [
   "issue_raised_by",
-  "company_name",
   "column_break_1",
   "date_requested",
   "section_break_1",
@@ -22,12 +21,7 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "company_name",
-   "fieldtype": "Data",
-   "label": "Company",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -57,17 +51,18 @@
    "read_only": 1
   },
   {
+   "fetch_from": "amended_from.issue_raised_by",
    "fieldname": "issue_raised_by",
-   "fieldtype": "Table",
+   "fieldtype": "Data",
    "label": "Issue Raised By",
-   "options": "User List",
+   "read_only": 1,
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-04 17:05:47.355579",
+ "modified": "2023-10-06 17:47:55.235837",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Request",

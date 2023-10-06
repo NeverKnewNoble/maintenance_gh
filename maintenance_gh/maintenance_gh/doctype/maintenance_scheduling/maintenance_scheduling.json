@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{####}",
+ "creation": "2023-10-06 12:59:34.824162",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "issue_id",
+  "column_break_a79uu",
+  "description_scheduling",
+  "section_break_qvmpv",
+  "date_scheduling",
+  "time_scheduling",
+  "assigned_to",
+  "column_break_chrme",
+  "assistance_channel",
+  "job_status",
+  "section_break_52tkg",
+  "subject_matter",
+  "section_break_micsf",
+  "tool_needed",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Maintenance Scheduling",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "issue_id",
+   "fieldtype": "Data",
+   "label": "Issue ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "job_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Job Status",
+   "options": "Open\nCompleted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_chrme",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Table",
+   "label": "Assigned To",
+   "options": "Assigned To List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assistance_channel",
+   "fieldtype": "Select",
+   "label": "Assistance Channel",
+   "options": "\nRequires Visit\nRequires Call",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject_matter",
+   "fieldtype": "Long Text",
+   "label": "Subject Matter"
+  },
+  {
+   "fieldname": "section_break_52tkg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_micsf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tool_needed",
+   "fieldtype": "Small Text",
+   "label": "Tools Needed"
+  },
+  {
+   "fieldname": "date_scheduling",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_scheduling",
+   "fieldtype": "Time",
+   "label": "Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description_scheduling",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_qvmpv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_a79uu",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-06 16:23:52.645062",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Maintenance Scheduling",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
