@@ -1,0 +1,22 @@
+{
+ "attach_print": 0,
+ "channel": "Telegram",
+ "creation": "2023-10-06 12:41:04.365895",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Telegram Notification",
+ "document_type": "Maintenance Request",
+ "dynamic_recipients": 0,
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Issue Report For Maintenance Team<h3>\n\n<p>Transaction {{ doc.name }} has been submitted to the maintenance team<p>\n\n{% for sector in doc.sector %}\nSector: {{ sector.sector }}\n{% endfor %}\n\n{% for sector in doc.sector %}\nDescription: {{ sector.issue_description }}\n{% endfor %}",
+ "modified": "2023-10-06 12:41:04.365895",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Mainten Telegram",
+ "owner": "Administrator",
+ "subject": "Maintenance Telegram Request {{ doc.name }} Submitted",
+ "telegram_user": "Maintain Mail-Main_gh_Token_1"
+}

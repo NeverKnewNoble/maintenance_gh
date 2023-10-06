@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2023-10-05 16:40:36.975794",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Maintenance Request",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Issue Report For Maintenance Team<h3>\n\n<p>Transaction {{ doc.name }} has been submitted to the maintenance team<p>\n\n<h4>Scheduling Details:<h4>\n\n{% for sector in doc.sector %}\nSector: {{ sector.sector }}\n{% endfor %}\n\n{% for sector in doc.sector %}\nDescription: {{ sector.issue_description }}\n{% endfor %}\n\n{% for sector in doc.sector %}\nDescription: {{ sector.issue_description }}\n{% endfor %}",
+ "modified": "2023-10-06 15:31:32.818501",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Maintain Mail",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Maintenance Manager"
+  },
+  {
+   "receiver_by_role": "Administrator"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Nortex Noble",
+ "sender_email": "nortexnoble@gmail.com",
+ "subject": "Maintenance Email Request {{ doc.name }} Submitted"
+}

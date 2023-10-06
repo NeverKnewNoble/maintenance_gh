@@ -1,0 +1,22 @@
+{
+ "attach_print": 0,
+ "channel": "Telegram",
+ "creation": "2023-10-06 16:00:30.860613",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Telegram Notification",
+ "document_type": "Maintenance Scheduling",
+ "dynamic_recipients": 0,
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Maintenance Scheduling From Maintenance Team<h3>\n\n<p>Report {{ doc.name }} has been submitted to the maintenance team<p>\n\n<h4>Scheduling Details:<h4>\n",
+ "modified": "2023-10-06 16:00:30.860613",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Mainten Scheduling Telegram",
+ "owner": "Administrator",
+ "subject": "Maintenance Telegram Scheduling {{ doc.name }} Submitted",
+ "telegram_user": "Maintain Mail-Main_gh_Token_1"
+}

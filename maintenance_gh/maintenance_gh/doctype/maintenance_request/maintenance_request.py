@@ -2,7 +2,13 @@
 # For license information, please see license.txt
 
 # import frappe
-from frappe.model.document import Document
+# from frappe.model.document import Document
 
-class MaintenanceRequest(Document):
-	pass
+# class MaintenanceRequest(Document):
+# 	pass
+
+import frappe
+
+def before_insert(doc, method):
+    if not doc.get('issue_raised_by'):
+        doc.issue_raised_by = frappe.session.user
