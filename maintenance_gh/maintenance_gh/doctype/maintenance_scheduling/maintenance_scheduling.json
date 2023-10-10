@@ -8,7 +8,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "issue_id",
+  "sector_name",
   "column_break_a79uu",
   "description_scheduling",
   "section_break_qvmpv",
@@ -33,12 +33,6 @@
    "options": "Maintenance Scheduling",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "issue_id",
-   "fieldtype": "Data",
-   "label": "Issue ID",
-   "reqd": 1
   },
   {
    "fieldname": "job_status",
@@ -88,7 +82,7 @@
    "fieldname": "date_scheduling",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Date",
+   "label": "Date For Maintenance",
    "reqd": 1
   },
   {
@@ -109,11 +103,17 @@
   {
    "fieldname": "column_break_a79uu",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sector_name",
+   "fieldtype": "Data",
+   "label": "Sector",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-06 16:23:52.645062",
+ "modified": "2023-10-09 09:39:30.234764",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Scheduling",
