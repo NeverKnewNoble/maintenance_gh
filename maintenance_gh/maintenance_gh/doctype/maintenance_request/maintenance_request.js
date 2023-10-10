@@ -22,13 +22,3 @@ frappe.ui.form.on('Maintenance Request', {
         frm.set_value('issue_raised_by', frappe.session.user);
     }
 });
-
-// frappe.ui.form.on('Maintenance Request', {
-//     refresh: function(frm) {
-//         // Check if the document is new
-//         if (frm.doc.__islocal) {
-//             // Set the current date in the date_requested field
-//             frm.set_value('date_requested', frappe.datetime.nowdate());
-//         }
-//     }
-// });
