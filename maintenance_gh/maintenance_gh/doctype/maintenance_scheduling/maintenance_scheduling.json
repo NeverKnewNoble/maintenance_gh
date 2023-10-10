@@ -22,7 +22,8 @@
   "subject_matter",
   "section_break_micsf",
   "tool_needed",
-  "amended_from"
+  "amended_from",
+  "ms_data"
  ],
  "fields": [
   {
@@ -39,8 +40,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Job Status",
-   "options": "Open\nCompleted",
-   "reqd": 1
+   "options": "Open\nCompleted"
   },
   {
    "fieldname": "column_break_chrme",
@@ -50,15 +50,13 @@
    "fieldname": "assigned_to",
    "fieldtype": "Table",
    "label": "Assigned To",
-   "options": "Assigned To List",
-   "reqd": 1
+   "options": "Assigned To List"
   },
   {
    "fieldname": "assistance_channel",
    "fieldtype": "Select",
    "label": "Assistance Channel",
-   "options": "\nRequires Visit\nRequires Call",
-   "reqd": 1
+   "options": "\nRequires Visit\nRequires Call"
   },
   {
    "fieldname": "subject_matter",
@@ -82,14 +80,12 @@
    "fieldname": "date_scheduling",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Date For Maintenance",
-   "reqd": 1
+   "label": "Date For Maintenance"
   },
   {
    "fieldname": "time_scheduling",
    "fieldtype": "Time",
-   "label": "Time",
-   "reqd": 1
+   "label": "Time"
   },
   {
    "fieldname": "description_scheduling",
@@ -107,13 +103,18 @@
   {
    "fieldname": "sector_name",
    "fieldtype": "Data",
-   "label": "Sector",
-   "reqd": 1
+   "label": "Sector"
+  },
+  {
+   "fieldname": "ms_data",
+   "fieldtype": "Data",
+   "label": "ms"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-10-09 09:39:30.234764",
+ "modified": "2023-10-10 18:17:23.407986",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Scheduling",
@@ -130,6 +131,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
