@@ -6,29 +6,28 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "sector",
+  "sector_1",
   "issue_description"
  ],
  "fields": [
   {
-   "fieldname": "sector",
+   "fieldname": "issue_description",
+   "fieldtype": "Text Editor",
+   "label": "Issue Description"
+  },
+  {
+   "fieldname": "sector_1",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Sector",
    "options": "Sector Prefix",
-   "reqd": 1
-  },
-  {
-   "fieldname": "issue_description",
-   "fieldtype": "Text Editor",
-   "label": "Issue Description",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-10-04 15:15:39.564160",
+ "modified": "2023-10-11 11:33:32.951042",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Sector List",
