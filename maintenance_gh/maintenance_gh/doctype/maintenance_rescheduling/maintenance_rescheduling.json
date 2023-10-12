@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{####}",
+ "creation": "2023-10-12 07:56:14.445787",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sector_name_re",
+  "rescheduled_date",
+  "rescheduled_time",
+  "column_break_8kzxk",
+  "description_rescheduling",
+  "column_break_a79uu",
+  "job_standing",
+  "assigned_to_re",
+  "column_break_90b5x",
+  "reason_rescheduling"
+ ],
+ "fields": [
+  {
+   "fieldname": "sector_name_re",
+   "fieldtype": "Data",
+   "label": "Sector"
+  },
+  {
+   "fieldname": "assigned_to_re",
+   "fieldtype": "Table",
+   "label": "Assigned To",
+   "options": "Assigned To List"
+  },
+  {
+   "fieldname": "column_break_a79uu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description_rescheduling",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "job_standing",
+   "fieldtype": "Select",
+   "label": "Job Standing",
+   "options": "\nPostponed\nCancelled\nOther"
+  },
+  {
+   "fieldname": "reason_rescheduling",
+   "fieldtype": "Long Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "rescheduled_date",
+   "fieldtype": "Date",
+   "label": "Rescheduled Date"
+  },
+  {
+   "fieldname": "rescheduled_time",
+   "fieldtype": "Time",
+   "label": "Rescheduled Time"
+  },
+  {
+   "fieldname": "column_break_8kzxk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_90b5x",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-12 09:26:13.350486",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Maintenance Rescheduling",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -51,8 +51,6 @@ def maintenance(doc, event):
         maintenance_scheduling.insert()
         maintenance_scheduling.submit()
 
-    
-
 
 class MaintenanceRequest(Document):
     def on_submit(self):

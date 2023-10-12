@@ -83,7 +83,7 @@
   },
   {
    "fieldname": "description_scheduling",
-   "fieldtype": "Small Text",
+   "fieldtype": "Long Text",
    "label": "Description"
   },
   {
@@ -107,7 +107,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-11 15:52:35.613603",
+ "modified": "2023-10-12 09:09:02.314349",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Scheduling",
