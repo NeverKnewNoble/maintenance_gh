@@ -9,9 +9,9 @@
  "engine": "InnoDB",
  "field_order": [
   "sector_name",
-  "assigned_to",
-  "column_break_a79uu",
   "description_scheduling",
+  "column_break_a79uu",
+  "assigned_to",
   "section_break_qvmpv",
   "date_scheduling",
   "time_scheduling",
@@ -63,7 +63,7 @@
   },
   {
    "fieldname": "section_break_micsf",
-   "fieldtype": "Section Break"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "tool_needed",
@@ -83,7 +83,7 @@
   },
   {
    "fieldname": "description_scheduling",
-   "fieldtype": "Long Text",
+   "fieldtype": "Small Text",
    "label": "Description"
   },
   {
@@ -107,7 +107,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-12 09:09:02.314349",
+ "modified": "2023-10-12 23:29:41.447195",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Scheduling",
