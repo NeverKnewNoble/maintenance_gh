@@ -1,20 +1,20 @@
 {
  "attach_print": 0,
  "channel": "Email",
- "creation": "2023-10-05 16:40:36.975794",
+ "creation": "2023-10-13 11:46:45.370239",
  "days_in_advance": 0,
  "docstatus": 0,
  "doctype": "Notification",
- "document_type": "Maintenance Request",
+ "document_type": "Maintenance Rescheduling",
  "enabled": 1,
  "event": "Submit",
  "idx": 0,
  "is_standard": 1,
- "message": "<h3>Issue Report For Maintenance Team<h3>\n\n<p>Isssue {{ doc.name }} has been submitted to the maintenance team<p>\n\n<h4>Request Details:<h4>",
- "modified": "2023-10-13 11:33:50.797224",
+ "message": "<h3>Maintenance Scheduling From Maintenance Team<h3>\n\n<p>Report {{ doc.name }} has been rescheduled<p>\n\n<h4>Rescheduling Details:<h4>",
+ "modified": "2023-10-13 11:46:45.370239",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
- "name": "Maintain Mail",
+ "name": "Maintenance Recheduling Email",
  "owner": "Administrator",
  "recipients": [
   {
@@ -28,5 +28,5 @@
  "send_to_all_assignees": 0,
  "sender": "Nortex",
  "sender_email": "nortexnoble@gmail.com",
- "subject": "Maintenance Request Email{{ doc.name }} Submitted"
+ "subject": "Maintenance Recheduling Email {{ doc.name }} Submitted"
 }

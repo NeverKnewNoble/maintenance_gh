@@ -1,0 +1,22 @@
+{
+ "attach_print": 0,
+ "channel": "Telegram",
+ "creation": "2023-10-13 11:16:12.133636",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Telegram Notification",
+ "document_type": "Maintenance Request",
+ "dynamic_recipients": 0,
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Issue Report For Maintenance Team<h3>\n\n<p>Issue {{ doc.name }} has been submitted to the maintenance team<p>\n\n",
+ "modified": "2023-10-13 11:39:03.196839",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Main Request Tele",
+ "owner": "Administrator",
+ "subject": "Telegram Maintenance Request {{ doc.name }} Submitted",
+ "telegram_user": "nortexnoble@gmail.com-Tele 4 Maintence Gh"
+}

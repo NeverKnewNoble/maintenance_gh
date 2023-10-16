@@ -1,0 +1,22 @@
+{
+ "attach_print": 0,
+ "channel": "Telegram",
+ "creation": "2023-10-13 11:50:57.841936",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Telegram Notification",
+ "document_type": "Maintenance Rescheduling",
+ "dynamic_recipients": 0,
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Maintenance Scheduling From Maintenance Team<h3>\n\n<p>Report {{ doc.name }} has been rescheduled<p>\n\n<h4>Rescheduling Details:<h4>",
+ "modified": "2023-10-13 11:51:12.645409",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Telegram Maintenance Recheduling",
+ "owner": "Administrator",
+ "subject": "Telegram Maintenance Recheduling {{ doc.name }} Submitted",
+ "telegram_user": "nortexnoble@gmail.com-Tele 4 Maintence Gh"
+}

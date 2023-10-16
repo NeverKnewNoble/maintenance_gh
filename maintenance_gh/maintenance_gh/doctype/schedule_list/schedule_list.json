@@ -1,28 +1,31 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-10-15 22:25:46.729581",
+ "autoname": "format:{####}",
+ "creation": "2023-10-13 16:04:14.978101",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "assigned_to"
+  "id_1"
  ],
  "fields": [
   {
-   "fieldname": "assigned_to",
+   "fieldname": "id_1",
    "fieldtype": "Link",
-   "label": "Assigned",
-   "options": "User"
+   "in_list_view": 1,
+   "label": "Schedule ID",
+   "options": "Maintenance Scheduling"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-10-15 22:25:46.729581",
+ "modified": "2023-10-13 16:11:18.556203",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
- "name": "Assigned To List",
+ "name": "Schedule List",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

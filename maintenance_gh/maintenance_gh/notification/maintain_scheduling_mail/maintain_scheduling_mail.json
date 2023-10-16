@@ -10,8 +10,8 @@
  "event": "Save",
  "idx": 0,
  "is_standard": 1,
- "message": "<h3>Maintenance Scheduling From Maintenance Team<h3>\n\n<p>Report {{ doc.name }} has been submitted to the maintenance team<p>\n\n<h4>Scheduling Details:<h4>\n\n",
- "modified": "2023-10-06 15:51:17.116442",
+ "message": "<h3>Maintenance Scheduling From Maintenance Team<h3>\n\n<p>Report {{ doc.name }} has been submitted to the maintenance team<p>\n\n<h4>Scheduling Details:<h4>\n\n<h4>Assigned To:</h4>\n<ul>\n  {% for assigned_to_list in doc.maintenance_scheduling %}\n    <li>{{ assigned_to_list.assigned_to }}</li>\n  {% endfor %}\n</ul>",
+ "modified": "2023-10-13 13:33:33.633088",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintain Scheduling Mail",
@@ -21,12 +21,13 @@
    "receiver_by_role": "Maintenance Manager"
   },
   {
+   "receiver_by_document_field": "",
    "receiver_by_role": "Administrator"
   }
  ],
  "send_system_notification": 0,
  "send_to_all_assignees": 0,
- "sender": "Nortex Noble",
+ "sender": "Nortex",
  "sender_email": "nortexnoble@gmail.com",
- "subject": "Maintenance Email Scheduling {{ doc.name }} Submitted"
+ "subject": "Maintenance Scheduling Email{{ doc.name }} Submitted"
 }
