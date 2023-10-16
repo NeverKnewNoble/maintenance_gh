@@ -17,19 +17,23 @@
   "job_standing",
   "assigned_to_re",
   "column_break_90b5x",
-  "reason_rescheduling"
+  "reason_rescheduling",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "sector_name_re",
-   "fieldtype": "Data",
-   "label": "Sector"
+   "fieldtype": "Table",
+   "label": "Sector",
+   "options": "Schedule List",
+   "reqd": 1
   },
   {
    "fieldname": "assigned_to_re",
    "fieldtype": "Table",
    "label": "Assigned To",
-   "options": "Assigned To List"
+   "options": "Assigned To List",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_a79uu",
@@ -54,7 +58,9 @@
   {
    "fieldname": "rescheduled_date",
    "fieldtype": "Date",
-   "label": "Rescheduled Date"
+   "in_list_view": 1,
+   "label": "Rescheduled Date",
+   "reqd": 1
   },
   {
    "fieldname": "rescheduled_time",
@@ -68,11 +74,21 @@
   {
    "fieldname": "column_break_90b5x",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Maintenance Rescheduling",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-10-12 09:26:13.350486",
+ "modified": "2023-10-13 16:13:08.357730",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Rescheduling",
@@ -89,6 +105,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

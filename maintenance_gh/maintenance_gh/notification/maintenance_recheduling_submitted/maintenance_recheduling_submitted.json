@@ -1,20 +1,20 @@
 {
  "attach_print": 0,
  "channel": "System Notification",
- "creation": "2023-10-05 10:55:47.038725",
+ "creation": "2023-10-13 11:48:43.977291",
  "days_in_advance": 0,
  "docstatus": 0,
  "doctype": "Notification",
- "document_type": "Maintenance Request",
+ "document_type": "Maintenance Rescheduling",
  "enabled": 1,
  "event": "Submit",
  "idx": 0,
  "is_standard": 1,
- "message": "Add your message here",
- "modified": "2023-10-13 11:38:00.417487",
+ "message": "<h3>Maintenance Scheduling From Maintenance Team<h3>\n\n<p>Report {{ doc.name }} has been rescheduled<p>\n\n<h4>Rescheduling Details:<h4>",
+ "modified": "2023-10-13 11:48:43.977291",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
- "name": "Maintenance Request Submitted",
+ "name": "Maintenance Recheduling Submitted",
  "owner": "Administrator",
  "recipients": [
   {
@@ -26,5 +26,5 @@
  ],
  "send_system_notification": 0,
  "send_to_all_assignees": 0,
- "subject": "Maintenance Request {{ doc.name }} Submitted"
+ "subject": "Maintenance Recheduling {{ doc.name }} Submitted"
 }

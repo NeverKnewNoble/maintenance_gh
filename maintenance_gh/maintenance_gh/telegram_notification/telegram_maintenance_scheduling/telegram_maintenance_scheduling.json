@@ -1,0 +1,22 @@
+{
+ "attach_print": 0,
+ "channel": "Telegram",
+ "creation": "2023-10-13 11:24:25.608255",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Telegram Notification",
+ "document_type": "Maintenance Scheduling",
+ "dynamic_recipients": 0,
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Maintenance Scheduling From Maintenance Team<h3>\n\n<p>Report {{ doc.name }} has been submitted to the maintenance team<p>\n\n<h4>Scheduling Details:<h4>\n\n",
+ "modified": "2023-10-13 11:24:25.608255",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Telegram Maintenance Scheduling",
+ "owner": "Administrator",
+ "subject": "Telegram Maintenance Scheduling {{ doc.name }} Submitted",
+ "telegram_user": "nortexnoble@gmail.com-Tele 4 Maintence Gh"
+}
