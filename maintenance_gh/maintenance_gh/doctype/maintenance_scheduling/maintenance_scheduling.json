@@ -33,7 +33,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Job Status",
-   "options": "Open\nCompleted"
+   "options": "Open\nCompleted\nRescheduled"
   },
   {
    "fieldname": "column_break_chrme",
@@ -72,8 +72,9 @@
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-10-16 11:30:34.417972",
+ "modified": "2023-10-17 09:52:41.780686",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Scheduling",

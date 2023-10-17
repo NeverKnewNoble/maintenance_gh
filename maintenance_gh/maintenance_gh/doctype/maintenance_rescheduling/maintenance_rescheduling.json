@@ -9,40 +9,27 @@
  "engine": "InnoDB",
  "field_order": [
   "sector_name_re",
-  "rescheduled_date",
-  "rescheduled_time",
-  "column_break_8kzxk",
-  "description_rescheduling",
+  "reappointment",
   "column_break_a79uu",
   "job_standing",
-  "assigned_to_re",
+  "rescheduled_date",
+  "rescheduled_time",
   "column_break_90b5x",
   "reason_rescheduling",
+  "section_break_xv2ty",
   "amended_from"
  ],
  "fields": [
   {
    "fieldname": "sector_name_re",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "Sector",
-   "options": "Schedule List",
-   "reqd": 1
-  },
-  {
-   "fieldname": "assigned_to_re",
-   "fieldtype": "Table",
-   "label": "Assigned To",
-   "options": "Assigned To List",
+   "options": "Maintenance Scheduling",
    "reqd": 1
   },
   {
    "fieldname": "column_break_a79uu",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "description_rescheduling",
-   "fieldtype": "Long Text",
-   "label": "Description"
   },
   {
    "fieldname": "job_standing",
@@ -68,10 +55,6 @@
    "label": "Rescheduled Time"
   },
   {
-   "fieldname": "column_break_8kzxk",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "column_break_90b5x",
    "fieldtype": "Column Break"
   },
@@ -83,12 +66,22 @@
    "options": "Maintenance Rescheduling",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xv2ty",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reappointment",
+   "fieldtype": "Table",
+   "label": "Reappointment",
+   "options": "Appointment List"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-13 16:13:08.357730",
+ "modified": "2023-10-17 11:05:53.213386",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Rescheduling",
