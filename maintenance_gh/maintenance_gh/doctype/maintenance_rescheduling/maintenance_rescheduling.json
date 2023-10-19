@@ -8,7 +8,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "sector_name_re",
+  "sector",
   "reappointment",
   "column_break_a79uu",
   "job_standing",
@@ -21,13 +21,6 @@
  ],
  "fields": [
   {
-   "fieldname": "sector_name_re",
-   "fieldtype": "Link",
-   "label": "Sector",
-   "options": "Maintenance Scheduling",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_a79uu",
    "fieldtype": "Section Break"
   },
@@ -35,7 +28,7 @@
    "fieldname": "job_standing",
    "fieldtype": "Select",
    "label": "Job Standing",
-   "options": "\nPostponed\nCancelled\nOther"
+   "options": "\nPostponed To\nCancelled\nOther"
   },
   {
    "fieldname": "reason_rescheduling",
@@ -76,12 +69,19 @@
    "fieldtype": "Table",
    "label": "Reappointment",
    "options": "Appointment List"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Link",
+   "label": "Sector",
+   "options": "Maintenance Scheduling",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-17 11:05:53.213386",
+ "modified": "2023-10-19 08:42:20.357682",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Rescheduling",
