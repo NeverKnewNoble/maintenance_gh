@@ -5,21 +5,34 @@ import frappe
 from frappe.model.document import Document
 
 class MaintenanceRescheduling(Document):
-	pass
+    pass
 
-def populate_sector_data(doc, method):
-    if doc.selected_maintenance_scheduling:
-        # Get the selected "Maintenance Scheduling" document
-        maintenance_scheduling_doc = frappe.get_doc("Maintenance Scheduling", doc.selected_maintenance_scheduling)
+@frappe.whitelist()
+def populate_reappointment(rescheduling_docname):
+    scheduling_doc = frappe.get_doc("Maintenance Scheduling", rescheduling_docname)
+    reappointment_data = []
 
-        # Clear existing rows in the "sector_data" table
-        doc.sector_data = []
+    # for row in scheduling_doc.get("appointment"):
 
-        # Populate the "sector_data" table with data from the selected document
-        for row in maintenance_scheduling_doc.get("appointment"):
-            sector_data = doc.append("reappointment", {})
-            sector_data.sector_name = row.get("sector_name")
-            sector_data.description_scheduling = row.get("description_scheduling")
+    #     reappointment_data.append({
+    #         "sector_name": row.get("sector_name"),
+    #         "description_scheduling": row.get("description_scheduling"),
+    #         "assigned_to": row.get("assigned_to"),
+    #         "instructions_": row.get("instructions_")
+    #     })
 
-    # Save the "Maintenance Rescheduling" document
-    doc.save()
+    for row in scheduling_doc.get("appointment"):
+        scheduling_tracker_doc = frappe.new_doc("Reschedule Tracker")
+        scheduling_tracker_doc.append("track", row)
+        scheduling_tracker_doc.insert()
+
+        reappointment_data.append({
+            "sector_name": row.get("sector_name"),
+            "description_scheduling": row.get("description_scheduling"),
+            "assigned_to": row.get("assigned_to"),
+            "instructions_": row.get("instructions_")
+        })
+
+     
+
+    return reappointment_data

@@ -213,3 +213,23 @@ app_license = "MIT"
 # auth_hooks = [
 #	"maintenance_gh.auth.validate"
 # ]
+
+
+#FOR SCHEDULE TRACKER ON SUBMIT >>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# In your hooks.py file
+# doc_events = {
+#     "Maintenance Scheduling": {
+#         "on_submit": "maintenance_gh.maintenance_gh.doctype.maintenance_scheduling.maintenance_scheduling.create_scheduling_tracker_documents"
+#     }
+# }
+
+#FOR SCHEDULE TRACKER ON SAVE >>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# In your hooks.py file
+doc_events = {
+    "Maintenance Scheduling": {
+        "on_update": "maintenance_gh.maintenance_gh.doctype.maintenance_scheduling.maintenance_scheduling.create_scheduling_tracker_documents"
+    }
+}
+

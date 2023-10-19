@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2023-10-19 09:25:54.109706",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Reschedule Tracker",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h2>Maintenance Rescheduling</h2>\n<h3>Report {{ doc.name }} has been rescheduled according to the details below.</h3>\n<h4>Scheduling Details:</h4>\n\n<ul>\n<li>\n{% for track in doc.track %}\nSector: {{ track.sector_name }}\n{% endfor %}\n</li>\n\n<li>\n{% for track in doc.track %}\nDescription: {{ track.description_scheduling }}\n{% endfor %}\n</li>\n\n<li>\n{% for track in doc.track %}\nInstructions: {{ track.instructions_}}\n{% endfor %}\n</li>\n</ul>",
+ "modified": "2023-10-19 09:25:54.109706",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Tracker For Reschedule",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "assigned_to,track"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Nortex",
+ "sender_email": "nortexnoble@gmail.com",
+ "subject": "Tracker For Reschedule Submitted"
+}
