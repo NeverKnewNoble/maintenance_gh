@@ -8,7 +8,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "track"
+  "track",
+  "amended_from"
  ],
  "fields": [
   {
@@ -16,11 +17,20 @@
    "fieldtype": "Table",
    "label": "Track",
    "options": "Appointment List"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Reschedule Tracker",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-19 08:52:49.480725",
+ "modified": "2023-10-23 17:31:29.044110",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Reschedule Tracker",

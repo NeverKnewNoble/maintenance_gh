@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{####}",
+ "autoname": "format: MMR-{DD/MM/YYYY}-{####}",
  "creation": "2023-10-12 07:56:14.445787",
  "default_view": "List",
  "doctype": "DocType",
@@ -81,7 +81,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-19 08:42:20.357682",
+ "modified": "2023-10-24 05:18:43.624898",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintenance Rescheduling",
