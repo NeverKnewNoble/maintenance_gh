@@ -10,8 +10,8 @@
  "event": "Submit",
  "idx": 0,
  "is_standard": 1,
- "message": "<h3>Maintenance Request</h3>\n<h2>Request {{ doc.name }} Has Been Submitted To The Maintenance Team</h2>\n\n<p>Dear Maintenance Manager,<br>\n<p>I am writting to notify you of and to request for the necessary repairs for the following property:<br>\n\n<h4>Scheduling Details:<h4>\n\n{% for sector in doc.sector %}\nSector: {{ sector.sector }}\n{% endfor %}\n\n{% for sector in doc.sector %}\nDescription: {{ sector.issue_description }}\n{% endfor %}",
- "modified": "2023-10-18 23:33:54.288568",
+ "message": "<h3>Maintenance Request</h3>\n<h2>Request {{ doc.name }} Has Been Submitted To The Maintenance Team</h2>\n\n<p>Dear Maintenance Manager,<br>\n<p>I am writting to notify you of and to request for the necessary repairs for the following property:<br>\n\n<h4>Scheduling Details:<h4>\n\n<ul>\n<li>\n{% for track in doc.track %}\nSector: {{ track.sector_name }}\n{% endfor %}\n</li>\n\n<li>\n{% for track in doc.track %}\nDescription: {{ track.description_scheduling }}\n{% endfor %}\n</li>\n</ul>",
+ "modified": "2023-10-23 14:20:33.487727",
  "modified_by": "Administrator",
  "module": "Maintenance Gh",
  "name": "Maintain Email !",
@@ -26,7 +26,7 @@
  ],
  "send_system_notification": 0,
  "send_to_all_assignees": 0,
- "sender": "Nortex",
+ "sender": "Noble",
  "sender_email": "nortexnoble@gmail.com",
  "subject": "Maintenance Request Email {{ doc.name }} Submitted"
 }
