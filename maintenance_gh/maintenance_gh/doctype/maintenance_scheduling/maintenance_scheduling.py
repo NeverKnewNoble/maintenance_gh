@@ -71,5 +71,28 @@ def create_scheduling_tracker_documents(doctype, docname):
 
 
 
+import frappe
+
+@frappe.whitelist()
+def btnfunction():
+    # Your custom Python code here
+    print("The button is working")
+    return "The button is working"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
