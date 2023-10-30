@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2023-10-30 21:34:50.564401",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Maintenance Request",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h2>Maintenance Request</h2>\n<h3>Request {{ doc.name }} Has Been Submitted</h2>\n\n<p>Dear Maintenance Manager,<br>\n<p>I am writting to notify and to request for the necessary repairs for the following property:<br>\n\n<h4>Request Details:<h4>\n<ul>\n<li>\n{% for sector in doc.sector_list %}\nSector: {{ sector.sector_1 }}\n{% endfor %}\n</li>\n<li>\n{% for sector in doc.sector_list %}\nDescription: {{ sector.issue_description }}\n{% endfor %}\n</li>\n</ul>\n",
+ "modified": "2023-10-30 21:34:50.564401",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Maintenance Request",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Administrator"
+  },
+  {
+   "receiver_by_role": "Maintenance Manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Noble",
+ "sender_email": "nortexnoble@gmail.com",
+ "subject": "Maintenance Request {{ doc.name }} Submitted."
+}

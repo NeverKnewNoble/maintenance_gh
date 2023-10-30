@@ -24,7 +24,7 @@
 
 frappe.ui.form.on('Maintenance Scheduling', {
     refresh: function (frm) {
-        frm.add_custom_button(__('Custom Button'), function () {
+        frm.add_custom_button(__('Reschedule This Form'), function () {
             frappe.call({
                 method: 'maintenance_gh.maintenance_gh.doctype.maintenance_scheduling.maintenance_scheduling.btnfunction',
                 args: {},

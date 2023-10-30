@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2023-10-30 21:39:59.691265",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Schedule Tracker",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h2>Maintenance Scheduling<h2>\n\n<h3>Report {{ doc.name }} Has Been Assigned To The Following Personnel</h3>\n\n<h4>Scheduling Details:<h4>\n<ul>\n<li>\n{% for track in doc.track %}\nSector: {{ track.sector_name }}\n{% endfor %}\n</li>\n\n<li>\n{% for track in doc.track %}\nDescription: {{ track.description_scheduling }}\n{% endfor %}\n</li>\n\n<li>\n{% for track in doc.track %}\nInstructions: {{ track.instructions_}}\n{% endfor %}\n</li>\n</ul>",
+ "modified": "2023-10-30 21:39:59.691265",
+ "modified_by": "Administrator",
+ "module": "Maintenance Gh",
+ "name": "Maintenance Scheduling",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "assigned_to,track"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Noble",
+ "sender_email": "nortexnoble@gmail.com",
+ "subject": "Maintenance Scheduling {{ doc.name }} Submitted."
+}
